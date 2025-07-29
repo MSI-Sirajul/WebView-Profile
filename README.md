@@ -51,10 +51,9 @@ React JS বা অন্যান্য আধুনিক JavaScript ফ্র
 
 ## 📥 **ডাউনলোড লিংক**
 
-[![Release](https://img.shields.io/github/v/release/MSI‑Sirajul/WebView‑Profile.svg?style=for-the-badge)](https://github.com/MSI‑Sirajul/WebView‑Profile/releases)
-[![Downloads](https://img.shields.io/github/downloads/MSI‑Sirajul/WebView‑Profile/latest/total.svg?style=for-the-badge)](https://github.com/MSI‑Sirajul/WebView‑Profile/releases/latest)
-[![License](https://img.shields.io/github/license/MSI‑Sirajul/WebView‑Profile.svg?style=for-the-badge)](https://github.com/MSI‑Sirajul/WebView‑Profile/blob/main/LICENSE)
-[![Repo Size](https://img.shields.io/github/repo-size/MSI‑Sirajul/WebView‑Profile.svg?style=for-the-badge)](https://github.com/MSI‑Sirajul/WebView‑Profile)
+[![Release](https://img.shields.io/github/v/release/MSI‑Sirajul/WebView‑Profile.svg?style=for-the-badge)](https://github.com/MSI-Sirajul/WebView-Profile/releases/)
+[![Downloads](https://img.shields.io/github/downloads/MSI‑Sirajul/WebView‑Profile/latest/total.svg?style=for-the-badge)](https://github.com/MSI-Sirajul/WebView-Profile/releases/download/WebView/Profile_release.apk)
+[![Repo Size](https://img.shields.io/github/repo-size/MSI‑Sirajul/WebView‑Profile.svg?style=for-the-badge)](https://github.com/MSI-Sirajul/WebView-Profile/)
 
 ---
 
