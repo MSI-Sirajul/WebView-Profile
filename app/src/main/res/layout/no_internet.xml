@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noInternetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/noInternetImage"
+        android:layout_width="640dp"
+        android:layout_height="360dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/no_internet" />
+
+    <!-- Updated TextView with ALL CAPS, bold text, and custom font -->
+
+    <TextView
+        android:id="@+id/noInternetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noInternetImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/tendang"
+        android:text="Check your internet connection"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reloadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noInternetText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#1A73E8"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.05"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:stateListAnimator="@null"
+        android:text="Reload"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
