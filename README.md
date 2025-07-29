@@ -51,9 +51,21 @@ React JS বা অন্যান্য আধুনিক JavaScript ফ্র
 
 ## 📥 **ডাউনলোড লিংক**
 
-[![Release](https://img.shields.io/github/v/release/MSI‑Sirajul/WebView‑Profile.svg?style=for-the-badge)](https://github.com/MSI-Sirajul/WebView-Profile/releases/)
-[![Downloads](https://img.shields.io/github/downloads/MSI‑Sirajul/WebView‑Profile/latest/total.svg?style=for-the-badge)](https://github.com/MSI-Sirajul/WebView-Profile/releases/download/WebView/Profile_release.apk)
-[![Repo Size](https://img.shields.io/github/repo-size/MSI‑Sirajul/WebView‑Profile.svg?style=for-the-badge)](https://github.com/MSI-Sirajul/WebView-Profile/)
+<div style="text-align: center; margin-bottom: 20px;">
+  <a href="https://github.com/MSI-Sirajul/WebView-Profile/releases">
+    <img src="https://img.shields.io/github/v/release/MSI-Sirajul/WebView-Profile.svg?style=flat-square" alt="Latest Release">
+  </a>
+  <a href="https://github.com/MSI-Sirajul/WebView-Profile/releases/latest">
+    <img src="https://img.shields.io/github/downloads/MSI-Sirajul/WebView-Profile/latest/total.svg?style=flat-square" alt="Total Downloads">
+  </a>
+  <a href="https://github.com/MSI-Sirajul/WebView-Profile/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/MSI-Sirajul/WebView-Profile.svg?style=flat-square" alt="License">
+  </a>
+  <a href="https://github.com/MSI-Sirajul/WebView-Profile">
+    <img src="https://img.shields.io/github/repo-size/MSI-Sirajul/WebView-Profile.svg?style=flat-square" alt="Repo Size">
+  </a>
+</div>
+
 
 ---
 
