@@ -1,31 +1,24 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.application' 
 }
 
 android {
-    compileSdk 31
+    namespace 'com.my.profile'
+    compileSdk 34 // Target Sdk: 34
 
     defaultConfig {
-        applicationId "com.sirajul.profile"
-        minSdk 21
-        targetSdk 31
+        applicationId "com.my.profile" // Pkg name: com.my.profile
+        minSdk 21 
+        targetSdk 34
         versionCode 1
         versionName "1.0"
-    }
 
-    splits {
-        abi {
-            enable true
-            reset()
-            include 'armeabi-v7a', 'arm64-v8a', 'x86'
-            universalApk false
-        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled true
-			shrinkResources true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -33,12 +26,16 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-	implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-    implementation 'com.github.bumptech.glide:glide:4.15.1'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
 
-	}
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.cardview:cardview:1.0.0' 
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

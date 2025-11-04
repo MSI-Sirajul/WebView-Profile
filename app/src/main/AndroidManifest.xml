@@ -1,35 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sirajul.profile">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Internet permission for WebView -->
+    <!-- ইন্টারনেট ব্যবহারের অনুমতি -->
     <uses-permission android:name="android.permission.INTERNET" />
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- নেটওয়ার্ক স্টেট চেক করার অনুমতি -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- গ্যালারি থেকে ছবি তোলার বা সিলেক্ট করার অনুমতি -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" /> 
+    <!-- Android 13+ (SDK 33+) এর জন্য READ_MEDIA_IMAGES ব্যবহার করা ভালো -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
-		android:usesCleartextTraffic="true"
         android:allowBackup="true"
-        android:icon="@mipmap/logo"
-        android:label="Profile"
-        android:roundIcon="@mipmap/logo"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.Light">
+        android:theme="@style/Theme.Profile"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
 
-        <!-- WebView Activity (Main Screen) -->
-        <activity android:name=".MainActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-
-        <!-- Splash Screen Activity (Launcher) -->
-        <activity android:name=".SplashActivity"
+        <!-- AppSetupActivity - অ্যাপের প্রাথমিক সেটআপের জন্য -->
+        <activity
+            android:name=".AppSetupActivity"
             android:exported="true"
-            android:theme="@android:style/Theme.Holo.Wallpaper.NoTitleBar">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Profile.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-    </application>
+       
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Profile.NoActionBar" />
 
+        <!-- WebViewActivity - WebView প্রদর্শন করবে -->
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Profile.NoActionBar" />
+
+        <!-- InfoActivity - ডেভেলপার এবং অ্যাপ ইনফো দেখানোর জন্য -->
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Profile.NoActionBar" />
+
+        <!-- NoInternetActivity - ইন্টারনেট না থাকলে প্রদর্শিত হবে -->
+        <activity
+            android:name=".NoInternetActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Profile.NoActionBar" />
+
+    </application>
 </manifest>

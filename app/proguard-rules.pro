@@ -19,8 +19,3 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
-# WebView and Chromium rules
--keep class org.chromium.** { *; }
--keepclassmembers class * {
-    @android.webkit.JavascriptInterface public *;
-}

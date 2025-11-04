@@ -1,23 +1,39 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
 
-    <!-- SwipeRefreshLayout যোগ করা হয়েছে -->
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipeRefreshLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <!-- Splash Screen Layout - Initially Visible -->
+    <include
+        android:id="@+id/splash_screen_layout"
+        layout="@layout/layout_splash_screen" />
 
-        <!-- WebView -->
-        <WebView
-            android:id="@+id/webView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="gone" />
+    <!-- Loading Animation Layout - Initially Gone -->
+    <include
+        android:id="@+id/loading_animation_layout"
+        layout="@layout/layout_loading_animation"
+        android:visibility="gone"/>
 
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <!-- No Internet Layout - Initially Gone -->
+    <include
+        android:id="@+id/no_internet_layout"
+        layout="@layout/layout_no_internet"
+        android:visibility="gone"/>
 
-    <!-- No internet layout (পূর্বের মতো) -->
-    <include layout="@layout/no_internet" />
+    <!-- WebView container or placeholder for WebViewActivity launch - Initially Gone -->
+    <!-- MainActivity will primarily manage state transitions. WebViewActivity will handle actual web content. -->
+    <!-- This is just a placeholder if MainActivity itself needs to show something else before launching WebViewActivity. -->
+    <TextView
+        android:id="@+id/main_content_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Main content will load here or launch another activity"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
 
-</RelativeLayout>
+</FrameLayout>

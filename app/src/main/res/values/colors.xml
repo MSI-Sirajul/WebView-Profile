@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Color Palette (from coolors.co) -->
+    <color name="white">#F8F9FA</color>          <!-- Lightest Gray / Background White -->
+    <color name="gray_100">#E9ECEF</color>       <!-- Very Light Gray -->
+    <color name="gray_200">#DEE2E6</color>       <!-- Light Gray -->
+    <color name="gray_300">#CED4DA</color>       <!-- Medium Light Gray -->
+    <color name="gray_400">#ADB5BD</color>       <!-- Medium Gray -->
+    <color name="gray_500">#6C757D</color>       <!-- Dark Medium Gray -->
+    <color name="gray_600">#495057</color>       <!-- Dark Gray -->
+    <color name="gray_700">#343A40</color>       <!-- Very Dark Gray -->
+    <color name="black">#212529</color>          <!-- Darkest Gray / Primary Text Black -->
+
+    <!-- Semantic Colors (based on palette) -->
+    <color name="colorPrimary">@color/gray_700</color>    <!-- App Bar/Primary background color -->
+    <color name="colorPrimaryVariant">@color/gray_600</color> <!-- Status bar color, etc. -->
+    <color name="colorOnPrimary">@color/white</color>      <!-- Text/icon color on primary color -->
+    <color name="colorSecondary">@color/gray_400</color>   <!-- Accent color -->
+    <color name="colorSecondaryVariant">@color/gray_500</color> <!-- Darker accent -->
+    <color name="colorOnSecondary">@color/black</color>    <!-- Text/icon color on secondary color -->
+    <color name="colorSurface">@color/white</color>       <!-- Card/surface background -->
+    <color name="colorOnSurface">@color/black</color>     <!-- Text/icon color on surface -->
+    <color name="colorBackground">@color/white</color>    <!-- Screen background -->
+    <color name="colorOnBackground">@color/black</color>  <!-- Text/icon color on background -->
+    <color name="colorError">#FF0000</color>              <!-- Error color (red) -->
+    <color name="colorOnError">@color/white</color>       <!-- Text on error color -->
+
+    <!-- Custom Colors for Buttons/Specific Elements -->
+    <color name="button_background">@color/gray_500</color>
+    <color name="button_text">@color/white</color>
+    <color name="edittext_border">@color/gray_300</color>
+</resources>

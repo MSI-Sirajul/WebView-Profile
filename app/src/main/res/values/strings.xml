@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="app_setup_title">App Setup</string>
+    <string name="hint_app_name">App Name</string>
+    <string name="hint_web_url">Web URL (e.g., https://example.com)</string>
+    <string name="button_save">Save</string>
+    <string name="info_button">Info</string>
+    <string name="info_title">App Information</string>
+    <string name="developer_details_label">Developer Details:</string>
+    <string name="developer_name">Your Name Here</string>
+    <string name="developer_email">your.email@example.com</string>
+    <string name="app_version_label">Version:</string>
+    <string name="app_version_code">1.0</string>
+    <string name="privacy_policy_label">Privacy Policy:</string>
+    <string name="privacy_policy_url">https://your.website.com/privacy</string>
+    <string name="no_internet_title">No Internet Connection</string>
+    <string name="no_internet_message">Please check your network settings and try again.</string>
+    <string name="loading_message">Loading...</string>
+    <string name="permission_denied_message">Permission denied. Cannot proceed without necessary permissions.</string>
+    <string name="image_select_error">Failed to select image.</string>
+    <string name="url_validation_error">Please enter a valid URL.</string>
+    <string name="app_name_validation_error">Please enter an app name.</string>
+</resources>
